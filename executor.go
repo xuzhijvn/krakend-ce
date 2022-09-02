@@ -184,11 +184,12 @@ func (e *ExecutorBuilder) NewCmdExecutor(ctx context.Context) cmd.Executor {
 				Writer: gelfWriter,
 				Health: (<-chan string)(agentPing),
 			}),
-			ProxyFactory:   pf,
-			Middlewares:    e.Middlewares,
-			Logger:         logger,
-			HandlerFactory: e.HandlerFactory.NewHandlerFactory(logger, metricCollector, tokenRejecterFactory),
-			RunServer:      router.RunServerFunc(e.RunServerFactory.NewRunServer(logger, serverhttp.RunServer)),
+			ProxyFactory:    pf,
+			Middlewares:     e.Middlewares,
+			Logger:          logger,
+			HandlerFactory:  e.HandlerFactory.NewHandlerFactory(logger, metricCollector, tokenRejecterFactory),
+			BHandlerFactory: router.BEndpointHandler,
+			RunServer:       router.RunServerFunc(e.RunServerFactory.NewRunServer(logger, serverhttp.RunServer)),
 		})
 
 		// start the engines

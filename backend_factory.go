@@ -65,7 +65,11 @@ func NewBackendFactoryWithContext(ctx context.Context, logger logging.Logger, me
 
 	return func(remote *config.Backend) proxy.Proxy {
 		logger.Debug(fmt.Sprintf("[BACKEND: %s] Building the backend pipe", remote.URLPattern))
-		return backendFactory(remote)
+		if remote.Type == "internal" {
+			return proxy.NewInternalProxy(remote, remote.Decoder)
+		} else {
+			return backendFactory(remote)
+		}
 	}
 }
 
