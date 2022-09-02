@@ -76,7 +76,7 @@ require (
 	github.com/alexeyco/binder v0.0.0-20180729220023-2a21303f588a // indirect
 	github.com/andybalholm/cascadia v1.1.0 // indirect
 	github.com/antlr/antlr4/runtime/Go/antlr v0.0.0-20220418222510-f25a4f6275ed // indirect
-	github.com/apache/thrift v0.12.0 // indirect
+	github.com/apache/thrift v0.15.0 // indirect
 	github.com/armon/go-metrics v0.3.10 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/auth0-community/go-auth0 v1.0.0 // indirect
@@ -180,8 +180,8 @@ require (
 	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7 // indirect
-	github.com/openzipkin/zipkin-go v0.1.6 // indirect
-	github.com/pelletier/go-toml v1.2.0 // indirect
+	github.com/openzipkin/zipkin-go v0.2.2 // indirect
+	github.com/pelletier/go-toml v1.4.0 // indirect
 	github.com/philhofer/fwd v1.0.0 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pierrec/lz4/v4 v4.1.14 // indirect
@@ -194,7 +194,7 @@ require (
 	github.com/ryanuber/go-glob v1.0.0 // indirect
 	github.com/santhosh-tekuri/jsonschema/v5 v5.0.0 // indirect
 	github.com/sony/gobreaker v0.4.1 // indirect
-	github.com/spf13/afero v1.1.2 // indirect
+	github.com/spf13/afero v1.2.2 // indirect
 	github.com/spf13/cast v1.3.0 // indirect
 	github.com/spf13/cobra v1.0.0 // indirect
 	github.com/spf13/jwalterweatherman v1.0.0 // indirect
@@ -249,3 +249,7 @@ require (
 replace github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 => github.com/m4ns0ur/httpcache v0.0.0-20200426190423-1040e2e8823f
 
 replace github.com/auth0-community/go-auth0 v1.0.0 => github.com/devopsfaith/go-auth0 v0.0.0-20220422124632-a1358a81b559
+
+replace github.com/krakendio/krakend-lua/v2 => github.com/xuzhijvn/krakend-lua/v2 v2.0.0-20220902034949-7e59d26d474c
+
+replace github.com/luraproject/lura/v2 => github.com/xuzhijvn/lura/v2 v2.0.0-20220902034222-c56a3948efa6
