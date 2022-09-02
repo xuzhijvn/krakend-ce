@@ -2,6 +2,9 @@ ARG GOLANG_VERSION
 ARG ALPINE_VERSION
 FROM golang:${GOLANG_VERSION}-alpine${ALPINE_VERSION} as builder
 
+ENV GO111MODULE=on \
+    GOPROXY=https://goproxy.cn,direct
+
 RUN apk --no-cache add make gcc musl-dev binutils-gold
 
 COPY . /app
