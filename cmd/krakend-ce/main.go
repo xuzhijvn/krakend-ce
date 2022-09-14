@@ -25,6 +25,9 @@ const (
 )
 
 func main() {
+
+	log.SetFlags(log.Lshortfile | log.LstdFlags) // set flags
+
 	sigs := make(chan os.Signal, 1)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
 	ctx, cancel := context.WithCancel(context.Background())

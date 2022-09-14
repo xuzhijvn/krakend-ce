@@ -250,6 +250,8 @@ replace github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 => git
 
 replace github.com/auth0-community/go-auth0 v1.0.0 => github.com/devopsfaith/go-auth0 v0.0.0-20220422124632-a1358a81b559
 
-replace github.com/krakendio/krakend-lua/v2 => github.com/xuzhijvn/krakend-lua/v2 v2.0.0-20220902034949-7e59d26d474c
+//replace github.com/krakendio/krakend-lua/v2 => /Users/tonyxu/GolandProjects/krakend-lua
 
 replace github.com/luraproject/lura/v2 => github.com/xuzhijvn/lura/v2 v2.0.0-20220902034222-c56a3948efa6
+
+replace github.com/krakendio/krakend-lua/v2 => github.com/xuzhijvn/krakend-lua/v2 v2.0.0-20220914085229-4256cba4560a
